@@ -1,1 +1,1 @@
-yarn format
+./node_modules/.bin/lint-staged
