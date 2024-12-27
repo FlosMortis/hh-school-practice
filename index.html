@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="header__container">
                     <a href="/">
-                        <img src="/assets/hh.svg" alt="" />
+                        <img src="/assets/hh-red.svg" alt="Логотип бренда" />
                     </a>
                     <!-- Выбор меню отображения сделан через медио-выражение для классов  menu-desktop/menu-desktop-buttons/ menu-mobile-->
 
@@ -93,6 +93,66 @@
             </section>
         </main>
 
+        <footer class="footer">
+            <section class="selling-point">
+                <div class="container">
+                    <div class="selling-point_item">
+                        <img class="selling-point_icon" src="./assets/support.svg" alt="Техническая поддержка" />
+                        <p class="selling-point_text">Быстрая доставка по всей России</p>
+                    </div>
+                    <div class="selling-point_item">
+                        <img class="selling-point_icon" src="./assets/return.svg" alt="Возврат" />
+                        <p class="selling-point_text">100% гарантия возврата и подлинность товара</p>
+                    </div>
+                    <div class="selling-point_item">
+                        <img class="selling-point_icon" src="./assets/delivery.svg" alt="Доставка" />
+                        <p class="selling-point_text">Круглосуточная служба поддержки</p>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__info">
+                <div class="container">
+                    <div class="footer__info-wrapper">
+                        <div class="footer__info__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/facebook.svg" alt="Facebook" class="footer__social-icon" />
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/twitter.svg" alt="Twitter" class="footer__social-icon" />
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/vk.svg" alt="VK" class="footer__social-icon" />
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/instagram.svg" alt="Instagram" class="footer__social-icon" />
+                            </a>
+                        </div>
+
+                        <div class="footer__info__apps">
+                            <a href="#" class="footer__info__apps-link">
+                                <img src="./assets/app store.svg" alt="App Store" class="footer__app-icon" />
+                            </a>
+                            <a href="#" class="footer__info__apps-link">
+                                <img src="./assets/google play.svg" alt="Google Play" class="footer__app-icon" />
+                            </a>
+                        </div>
+
+                        <a href="/" class="footer__info__logo">
+                            <img src="./assets/hh.svg" alt="Логотип HH" />
+                        </a>
+                    </div>
+
+                    <div class="footer__info__divider"></div>
+
+                    <p class="footer__copyright">
+                        © 2019 Группа компаний HeadHunter<br />
+                        Сегодня на сайте 684 978 вакансий, 34 789 747 резюме, 858 923 компаний и за неделю 1 211 363
+                        приглашения
+                    </p>
+                </div>
+            </section>
+        </footer>
+
         <section class="order">
             <div class="container">
                 <h2>Оформление заказа</h2>
@@ -100,7 +160,7 @@
                     <h4>Контактное лицо</h4>
                     <input type="text" class="order__input input-text" placeholder="ФИО" name="fio" />
                     <input type="email" class="order__input input-text" placeholder="Email" name="email" />
-                    <h4>Контактное лицо</h4>
+                    <h4>Оплата</h4>
                     <div>
                         <label>
                             <input type="radio" name="payment" value="online" />
@@ -119,7 +179,7 @@
                             При получении
                         </label>
                     </div>
-                    <button class="order__button button">Оформить заказ</button>
+                    <button class="order__button button" type="submit">Оформить заказ</button>
                 </form>
             </div>
         </section>
