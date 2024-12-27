@@ -1,0 +1,151 @@
+.footer {
+    .selling-point {
+        background-color: #eeeeee;
+        color: #333333;
+        padding: 20px 0;
+        margin-top: 40px;
+        width: 100%;
+
+        @media @gt-mobile {
+            margin-top: 80px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+
+            @media @gt-mobile {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &_icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &_text {
+            font-size: 14px;
+            color: #000;
+        }
+    }
+
+    &__info {
+        background-color: #212122;
+        color: #999999;
+        padding: 40px 0;
+        width: 100%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+
+            @media @gt-mobile {
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            border-bottom: 1px solid #666666;
+            padding-bottom: 15px;
+
+            @media @gt-mobile {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 30px;
+            }
+        }
+        /*&__divider {
+            width: 100%;
+            height: 1px;
+            background-color: #666666;
+            margin: 20px 0;
+        }*/
+        &__social {
+            display: flex;
+            gap: 15px;
+
+            @media @gt-mobile {
+                order: 1;
+            }
+
+            &-link {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+            }
+
+            &-icon {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__apps {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            @media @gt-mobile {
+                flex-direction: row;
+                gap: 8px;
+                order: 2;
+            }
+
+            &-link {
+                display: inline-block;
+                text-decoration: none;
+
+                &-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        &__logo {
+            display: none;
+
+            @media @gt-tablet {
+                display: block;
+                order: 3;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &__copyright {
+            font-size: 14px;
+            color: #999999;
+            line-height: 1.5;
+            margin-top: 20px;
+            text-align: left;
+
+            @media @gt-mobile {
+                text-align: center;
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+    }
+}
